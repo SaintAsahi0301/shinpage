@@ -38,15 +38,33 @@ _bool2 = False # ... 데이터 타입, 5가지.
 # print(난아웃풋입니다)
 
 
-#파이썬내장함스
-나는숫자 = 120
-나는숫자일까 = str(나는숫자) #위의 것과의 차이가 존재... 두 줄 다 120으로 출력됨.
+# #파이썬내장함스
+# 나는숫자 = 120
+# 나는숫자일까 = str(나는숫자) #위의 것과의 차이가 존재... 두 줄 다 120으로 출력됨.
 
-print(나는숫자)
-print(나는숫자일까)
+# print(나는숫자)
+# print(나는숫자일까)
 
-print(type(나는숫자))
-print(type(나는숫자일까)) # 위의 것은 int, 아래 것은 str.
+# print(type(나는숫자))
+# print(type(나는숫자일까)) # 위의 것은 int, 아래 것은 str.
 
 
+# 클래스 클라-쓰(카테고리) / 인스턴스
+# 붕어빵 틀, 
+
+class 사람:
+    def __init__(self, name, age, gender, nat):
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.nat = nat
+
+    def 자기소개(self):
+        print("나의이름은", self.name, "이고요, 나이는", self.age, "성별은", self.gender, "입니다.")
+        print(self.nat)
+신성욱 = 사람("신성욱", "25", "달려있음.", "일본인")
+최수민 = 사람("푸시", "11", "여고생.", "한국인")
+
+신성욱.자기소개()
+최수민.자기소개()
 
