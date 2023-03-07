@@ -81,7 +81,7 @@ class 사람:
 # - 요쇠: name, eng_name, age, pet_parent
 # - 메서드(함수): my_lord 라는 함수를 하나 갖고있음. (하는일: pet_parent print 하는것)
 
-#  클래스 만들기
+#  클래스 만들기 Class
 class Animal:
     def __init__(self, name, eng_name, age, pet_parent):
         self.name = name
@@ -89,6 +89,7 @@ class Animal:
         self.age = age
         self.pet_parent = pet_parent
 
+    # 메서드 (함수 => function, 근데 함수가 특별히, class 안에있는 함수는 메서드 method 라고 따로 부름)
     def 동물이름대기(self):
         print("나는", self.name, "영어로는", self.eng_name, "그리고 나이는", self.age, "마지막으로 저의 주인은", self.pet_parent)
 
@@ -96,6 +97,11 @@ class Animal:
 코끼리 = Animal("코끼리", "elephant", "12", "근수민")
 펭귄 = Animal("펭귄", "펭귄", "111", "대통령 이명박")
 
+# 코끼리 -> 인스턴스 Instance
+# 펭귄 -> 인스턴스 Instance
+
 # 메서드 사용하기
 코끼리.동물이름대기()
 펭귄.동물이름대기()
+
+
