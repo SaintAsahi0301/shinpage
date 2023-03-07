@@ -68,3 +68,34 @@ class 사람:
 신성욱.자기소개()
 최수민.자기소개()
 
+
+
+
+
+
+
+
+
+# 복습문제 [class 만들기]
+# - 이름: Animal
+# - 요쇠: name, eng_name, age, pet_parent
+# - 메서드(함수): my_lord 라는 함수를 하나 갖고있음. (하는일: pet_parent print 하는것)
+
+#  클래스 만들기
+class Animal:
+    def __init__(self, name, eng_name, age, pet_parent):
+        self.name = name
+        self.eng_name = eng_name
+        self.age = age
+        self.pet_parent = pet_parent
+
+    def 동물이름대기(self):
+        print("나는", self.name, "영어로는", self.eng_name, "그리고 나이는", self.age, "마지막으로 저의 주인은", self.pet_parent)
+
+# 클래스 사용하기 (호출하기)
+코끼리 = Animal("코끼리", "elephant", "12", "근수민")
+펭귄 = Animal("펭귄", "펭귄", "111", "대통령 이명박")
+
+# 메서드 사용하기
+코끼리.동물이름대기()
+펭귄.동물이름대기()
