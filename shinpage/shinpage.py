@@ -32,7 +32,7 @@ def index() -> pc.Component:
             font_size="2em",
         ),
         padding_top="10%",
-    )
+    ) #keyword arguement.
 
 
 # Add state and page to the app.
