@@ -9,30 +9,23 @@ filename = f"{config.app_name}/{config.app_name}.py"
 
 class State(pc.State):
     """The app state."""
+    color: str = "blue"
 
+    def change(self):
+        self.color = "red"    
     pass
 
 
 def index() -> pc.Component:
     return pc.center(
-        pc.vstack(
-            pc.heading("Welcome to Shinpage.", font_size="2em"),
-            pc.box("Get started by editing ", pc.code(filename, font_size="1em")),
-            pc.link(
-                "Check out our!!",
-                href=docs_url,
-                border="0.1em solid",
-                padding="0.5em",
-                border_radius="0.5em",
-                _hover={
-                    "color": "rgb(107,99,246)",
-                },
-            ),
-            spacing="1.5em",
-            font_size="2em",
+        pc.button(
+            "버튼",
+            # color_scheme="blue",
+            color_scheme=State.color,
+            border_radius="1em",
+            on_click=State.change,    
         ),
-        padding_top="10%",
-    ) #keyword arguement.
+    )
 
 
 # Add state and page to the app.
