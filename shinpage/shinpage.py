@@ -16,10 +16,10 @@ class State(pc.State):
 def index() -> pc.Component:
     return pc.center(
         pc.vstack(
-            pc.heading("Welcome to Pynecone!", font_size="2em"),
+            pc.heading("Welcome to Shinpage.", font_size="2em"),
             pc.box("Get started by editing ", pc.code(filename, font_size="1em")),
             pc.link(
-                "Check out our docs!",
+                "Check out our!!",
                 href=docs_url,
                 border="0.1em solid",
                 padding="0.5em",
